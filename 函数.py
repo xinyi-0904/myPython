@@ -55,7 +55,16 @@ else:
 
 
 def findMinAndMax(L):
-    return (None, None)
+    if len(L) == 0:
+        return (None, None)
+    min = L[0]
+    max = L[0]
+    for item in L:
+        if item < min:
+            min = item
+        if item > max:
+            max = item
+    return (min, max)
 
 
 # 测试
@@ -68,4 +77,4 @@ elif findMinAndMax([7, 1]) != (1, 7):
 elif findMinAndMax([7, 1, 3, 9, 5]) != (1, 9):
     print("测试失败!")
 else:
-    print("测试成功!")
+    print("最大值最小值检查测试成功!")

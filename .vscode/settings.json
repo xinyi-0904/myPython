@@ -1,0 +1,8 @@
+{
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.runInTerminal": false,
+    "code-runner.executorMap": {
+        "python": "python3 -u"
+    }
+}
