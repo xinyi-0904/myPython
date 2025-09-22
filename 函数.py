@@ -212,3 +212,7 @@ if abs(str2float("123.456") - 123.456) < 0.00001:
     print("测试成功!")
 else:
     print("测试失败!")
+    
+list = [-1,-12,4,5,-10]
+print(sorted(list,key=abs))
+print(list)
